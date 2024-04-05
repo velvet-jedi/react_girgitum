@@ -37,3 +37,16 @@
   outline: 15px solid #000;
   background-color: #fff;
 }
+
+.counter {
+  position: absolute;
+  top: 2em;  
+  margin-bottom: 1em;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border: 1px solid green;
+  padding: 0.5em 1em;
+  border-radius: 1em;
+
+  background-color: #fff;
+}

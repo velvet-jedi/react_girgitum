@@ -9,9 +9,13 @@ function App() {
   // state initialisation or state definition, backgroundColor is a state variable, and setBackgroundColor is a state function
   // setBackgroundColor is functionality that comes with useState hook
   const [backgroundColor, setBackgroundColor] = useState(colors[0]);
+  const [changeCounter, incrementCounter] = useState(0); // initial value of stateVariable
+
+
 
   const onButtonClick = (color) => () => {
     setBackgroundColor(color);
+    incrementCounter(changeCounter + 1);
   };
  
   return (
@@ -28,6 +32,10 @@ function App() {
             {color} {/* the button content */}
           </button>
         ))}
+        {/* display counter */}
+        <div className='counter'>
+          Change counter: {changeCounter}
+        </div>
       </div>
     </>
   )
